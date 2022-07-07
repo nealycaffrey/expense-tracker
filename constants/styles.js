@@ -1,11 +1,11 @@
 export const GlobalStyles = {
   colors: {
-    primary50: '#e4d9fd',
+    primary50: '#ffffff',
     primary100: '#c6affc',
     primary200: '#a281f0',
-    primary400: '#5721d4',
+    primary400: '#b30000',
     primary500: '#ff6666',
-    primary700: '#2d0689',
+    primary700: '#ffe6e6',
     primary800: '#200364',
     accent500: '#ffffff',
     error50: '#fcc4e4',
