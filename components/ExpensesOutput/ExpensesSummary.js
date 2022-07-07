@@ -1,13 +1,22 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const ExpensesSummary = () => {
+const ExpensesSummary = ({ expenses, periodName }) => {
+  const expensesSum = expenses.reduce((sum, expense) => {
+    return sum + expense.amount
+  }, 0);
+
   return (
     <View>
-        <Text>Last 7 Days</Text>
-        <Text>180 Rupees</Text>
+        <Text>{periodName}</Text>
+        <Text>Rs{expensesSum.toFixed(2)}</Text>
     </View>
   )
 }
 
+const styles= StyleSheet.create({
+  
+})
+
 export default ExpensesSummary;
+
