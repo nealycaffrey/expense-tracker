@@ -10,7 +10,7 @@ function ExpensesSummary({ expenses, periodName }) {
   return (
     <View style={styles.container}>
       <Text style={styles.period}>{periodName}</Text>
-      <Text style={styles.sum}>Rs {expensesSum.toFixed(2)}</Text>
+      <Text style={styles.sum}>${expensesSum.toFixed(2)}</Text>
     </View>
   );
 }
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   period: {
-    fontWeight: 'bold',
+    fontSize: 12,
     color: GlobalStyles.colors.primary400,
   },
   sum: {
