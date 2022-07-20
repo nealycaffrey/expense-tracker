@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   flatText: {
-    color: GlobalStyles.colors.primary200,
+    color: 'white',
+    // color: GlobalStyles.colors.primary200,
   },
   pressed: {
     opacity: 0.75,
